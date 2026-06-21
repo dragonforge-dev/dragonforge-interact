@@ -36,7 +36,7 @@ You can use an **InteractionRayCast** or **InteractionShapeCast** ndoe (or both)
 
 
 # Class Descriptions
-## Interact <img src="/addons/dragonforge_interactd/assets/textures/icons/interact.svg" width="32" alt="Interact Icon"/>
+## Interact <img src="/addons/dragonforge_interact/assets/textures/icons/interact.svg" width="32" alt="Interact Icon"/>
 Add this to a [StaticBody3D], [RigidBody3D] or [MeshInstance3D] node and when  the player mouses over any of the [StaticBody3D] or [RigidBody3D] nodes, the [member hover_mouse_cursor] will be shown. When clicked, the [member click_mouse_cursor] will be shown and the [signal interact] will be emitted.
 
 ### Signals
