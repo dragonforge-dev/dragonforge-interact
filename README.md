@@ -36,11 +36,11 @@ You can use an **InteractionRayCast** or **InteractionShapeCast** ndoe (or both)
 
 
 # Class Descriptions
-## Interact <img src="/addons/dragonforge_interactd/assets/textures/icons/interact.svg" width="32" alt="Interact Icon"/>
+## Interact Interact <img src="/addons/dragonforge_interact/assets/textures/icons/interact.svg" width="32" alt="Interact Icon"/>
 Add this to a [StaticBody3D], [RigidBody3D] or [MeshInstance3D] node and when  the player mouses over any of the [StaticBody3D] or [RigidBody3D] nodes, the [member hover_mouse_cursor] will be shown. When clicked, the [member click_mouse_cursor] will be shown and the [signal interact] will be emitted.
 
 ### Signals
-- `signal left_click` Emitted when the player clicks on any of the [StaticBody3D] or [RigidBody3D] nodes in the Node this is attached to (including the parent node itself).
+- `signal action_pressed` Emitted when the "interact" action is pressed and _is_mouse_hovering is true. This is used to emulate the mouse using an [InterctionRayCast3D].
 
 ### Export Variables
 - `hover_mouse_cursor: Texture2D` An image to change the mouse cursor to when the mouse cursor is hovering over the object.
@@ -61,7 +61,7 @@ Add this [Interactable] component to a [StaticBody3D], [RigidBody3D] or [MeshIns
 # Examples
 Running the project will run the test project.
 
-# Credit
-This plugin was inspired by this video. It describes how to make a carousel menu. Someone came to the Godot forum asking how to do this, and I decided to watch the video for fun. This plugin simplified the code and made it a single **Node**.
+# Credits
 - [Gear Icon](https://www.svgrepo.com/svg/509956/gear) by Zest Interface Icons (MIT)
 - [Highlight Icon](https://www.svgrepo.com/svg/310904/highlight) by Fluent UI Icons Filled (MIT)
+- [Weapon Crosshair](https://www.svgrepo.com/svg/17105/weapon-crosshair) by Android App (CC0)
